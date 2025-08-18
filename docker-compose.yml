@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  mars-rover-challange-foxbit:
+    build: .
+    container_name: mars-rover-challange-foxbit
+    command: npm start
+    volumes:
+      - .:/app
+    working_dir: /app
