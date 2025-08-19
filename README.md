@@ -89,8 +89,8 @@ tests/
 Build & run:
 
 ```bash
-docker build -t mars-rover-challange-foxbit-challenge-foxbit .
-docker run --rm mars-rover-challange-foxbit-challenge-foxbit
+docker build -t mars-rover-challenge-foxbit .
+docker run --rm mars-rover-challenge-foxbit
 
 ```
 
