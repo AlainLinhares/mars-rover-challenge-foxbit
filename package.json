@@ -6,7 +6,6 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "start": "ts-node src/app/cli.ts --input src/sample/input.txt",
-    "start:file": "node --loader ts-node/esm src/cli.ts",
     "test:unit": "jest --coverage",
     "test:integration": "jest --config ./tests/jest-integration.json --runInBand --forceExit",
     "test:watch": "jest --watch"
