@@ -37,8 +37,8 @@ npm start
 ## 🧪 Tests
 
 ```bash
-npm test:unit #Runs unit tests to check individual components.
-npm test:integration #Runs integration tests to check component interactions.
+npm run test:unit #Runs unit tests to check individual components.
+npm run test:integration #Runs integration tests to check component interactions.
 
 ```
 
