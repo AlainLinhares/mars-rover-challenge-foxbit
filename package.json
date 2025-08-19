@@ -9,8 +9,7 @@
     "start:file": "node --loader ts-node/esm src/cli.ts",
     "test:unit": "jest --coverage",
     "test:integration": "jest --config ./tests/jest-integration.json --runInBand --forceExit",
-    "test:watch": "jest --watch",
-    "lint": "echo \"Add ESLint if required by the company standards.\""
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
