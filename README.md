@@ -34,19 +34,13 @@ Solution for the **Mars Rover** challenge focusing on **code quality**, **SOLID 
 ```bash
 npm install
 npm start
-# By default, the command uses src/input.txt (which contains the sample input).
-
-# To use another file:
-npm run start:file -- --input path/to/file.txt
-# or
-node --loader ts-node/esm src/cli.ts --input path/to/file.txt
-
+# By default, the command uses src/sample/input.txt (which contains the sample input).
 ```
 
 ## 🧪 Tests
 
 ```bash
-npm test:unit #npm test:unit: Runs unit tests to check individual components.
+npm test:unit #Runs unit tests to check individual components.
 npm test:integration #Runs integration tests to check component interactions.
 
 ```
@@ -55,10 +49,12 @@ npm test:integration #Runs integration tests to check component interactions.
 
 ```text
 src/
-  app/application.ts         # orchestrates execution
-  cli.ts                     # CLI: parses args and calls Application
-  io/input-parser.ts         # reads/validates input file
-  input.txt                  # Contains plateau dimensions and rover initial positions with movement commands for simulation.
+  app/
+    application.ts         # orchestrates execution
+    cli.ts                 # CLI: parses args and calls Application
+  io/input-parser.ts       # reads/validates input file
+  sample/
+    input.txt              # Contains plateau dimensions and rover initial positions with movement commands for simulation.
   domain/
     enums/
       enums.ts                # Direction: Enum for cardinal directions (N, E, S, W).
@@ -66,12 +62,14 @@ src/
     errors/
       application-error.ts    #Generic application error
       invalid-input-error.ts  #Invalid user input error
-    coordinates.ts           # Represents immutable x, y coordinates with movement methods (north, south, east, west).
-    plateau.ts               # Represents the plateau boundaries and checks if coordinates are within the limits.
-    rover.ts                 # Represents a rover on the plateau, handling movement and command execution while ensuring it stays within boundaries.
+    coordinates.ts            # Represents immutable x, y coordinates with movement methods (north, south, east, west).
+    plateau.ts                # Represents the plateau boundaries and checks if coordinates are within the limits.
+    rover.ts                  # Represents a rover on the plateau, handling movement and command execution while ensuring it stays within boundaries.
 tests/
-  integration/               # integration tests
-  *.spec.ts                  # unit tests
+  integration/  
+    *.integration-spec.ts    # integration tests
+  unit/
+    *.spec.ts                # unit tests
   jest-integration.json      # Specifies module file extensions, test environment, test matching pattern, timeout, and TypeScript transformation settings.
 
 ```
