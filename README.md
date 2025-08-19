@@ -9,14 +9,11 @@ Solution for the **Mars Rover** challenge focusing on **code quality**, **SOLID 
     
 -   **Value Object**: `Coordinates`.
     
--   **Custom errors**: `OutOfBoundsError`, `InvalidCommandError`, `InvalidInputError`.
+-   **Custom errors**: `ApplicationError` (Base class for all application errors), `InvalidInputError` (Specific error for invalid inputs)
     
 -   **No runtime dependencies** (only dev dependencies for build/test).
     
 -   **Unit and integration tests** (Jest + ts-jest).
-    
--   **Execution via CLI** with `--input` pointing to the input file.
-    
 -   **Dockerfile** and **docker-compose**.
     
 
