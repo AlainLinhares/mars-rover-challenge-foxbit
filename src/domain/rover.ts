@@ -1,7 +1,6 @@
 import { Plateau } from "./plateau";
 import { Coordinates } from "./coordinates";
 import { Command, Direction } from "./enums/enums";
-import { InvalidInputError } from "./errors/invalid-input-error";
 
 interface Position {
   coordinates: Coordinates;

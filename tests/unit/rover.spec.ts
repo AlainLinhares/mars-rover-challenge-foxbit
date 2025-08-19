@@ -1,7 +1,7 @@
 import { Rover } from "../../src/domain/rover";
 import { Plateau } from "../../src/domain/plateau";
 import { Coordinates } from "../../src/domain/coordinates";
-import { Command, Direction } from "../../src/domain/enums/enums";
+import { Direction } from "../../src/domain/enums/enums";
 
 describe("Rover", () => {
   let plateau: Plateau;
@@ -39,9 +39,7 @@ describe("Rover", () => {
       { coordinates: new Coordinates(0, 0), direction: Direction.S },
       plateau
     );
-    expect(() => rover.executeCommands("M")).toThrow(
-      "Out of bounds: 0, -1"
-    );
+    expect(() => rover.executeCommands("M")).toThrow("Out of bounds: 0, -1");
   });
 
   it("should throw an error for an invalid command", () => {

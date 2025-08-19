@@ -84,9 +84,9 @@ LMLMLMLMM`;
     const invalidPositionContent = `5 5
   1 2
   LMLMLMLMM`;
-  
+
     (fs.readFileSync as jest.Mock).mockReturnValue(invalidPositionContent);
-  
+
     const parser = new InputParser("invalid-position-format.txt");
     expect(() => parser.run()).toThrow(InvalidInputError);
     expect(() => parser.run()).toThrow("Invalid rover position format: '1 2'");
@@ -96,12 +96,14 @@ LMLMLMLMM`;
     const plateauContent = `5 5
     6 6 N
     LMLMLMLMM`;
-  
+
     (fs.readFileSync as jest.Mock).mockReturnValue(plateauContent);
-  
+
     const parser = new InputParser("out-of-bounds.txt");
-  
+
     expect(() => parser.run()).toThrow(InvalidInputError);
-    expect(() => parser.run()).toThrow("Rover starting position is out of bounds: 6, 6");
+    expect(() => parser.run()).toThrow(
+      "Rover starting position is out of bounds: 6, 6"
+    );
   });
 });

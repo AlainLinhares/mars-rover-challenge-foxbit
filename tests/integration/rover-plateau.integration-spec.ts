@@ -11,9 +11,7 @@ describe("Rover and Plateau (Integration)", () => {
       plateau
     );
 
-    expect(() => rover.executeCommands("M")).toThrow(
-      "Out of bounds: 5, 6"
-    );
+    expect(() => rover.executeCommands("M")).toThrow("Out of bounds: 5, 6");
   });
 
   it("should allow rover to move within bounds", () => {
