@@ -1,4 +1,4 @@
-import { Coordinates } from "../src/domain/coordinates";
+import { Coordinates } from "../../src/domain/coordinates";
 
 describe("Coordinates", () => {
   it("should throw an error if coordinates are not integers", () => {

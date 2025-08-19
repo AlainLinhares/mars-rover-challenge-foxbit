@@ -1,7 +1,7 @@
 import * as fs from "fs";
-import { InputParser } from "../src/io/input-parser";
-import { ApplicationError } from "../src/domain/errors/application-error";
-import { InvalidInputError } from "../src/domain/errors/invalid-input-error";
+import { InputParser } from "../../src/io/input-parser";
+import { ApplicationError } from "../../src/domain/errors/application-error";
+import { InvalidInputError } from "../../src/domain/errors/invalid-input-error";
 
 jest.mock("fs", () => ({
   readFileSync: jest.fn(),

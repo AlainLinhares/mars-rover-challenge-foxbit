@@ -1,7 +1,7 @@
-import { Rover } from "../src/domain/rover";
-import { Plateau } from "../src/domain/plateau";
-import { Coordinates } from "../src/domain/coordinates";
-import { Command, Direction } from "../src/domain/enums/enums";
+import { Rover } from "../../src/domain/rover";
+import { Plateau } from "../../src/domain/plateau";
+import { Coordinates } from "../../src/domain/coordinates";
+import { Command, Direction } from "../../src/domain/enums/enums";
 
 describe("Rover", () => {
   let plateau: Plateau;

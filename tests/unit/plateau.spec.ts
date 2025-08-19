@@ -1,5 +1,5 @@
-import { Plateau } from "../src/domain/plateau";
-import { Coordinates } from "../src/domain/coordinates";
+import { Plateau } from "../../src/domain/plateau";
+import { Coordinates } from "../../src/domain/coordinates";
 
 describe("Plateau", () => {
   it("should return true if coordinates are within the plateau", () => {
