@@ -1,4 +1,4 @@
-import { Application } from "./app/application";
+import { Application } from "./application";
 import * as path from "path";
 
 function parseArgs(argv: string[]): { input?: string } {
@@ -14,7 +14,7 @@ function parseArgs(argv: string[]): { input?: string } {
 }
 
 const args = parseArgs(process.argv.slice(2));
-const inputPath = args.input ?? path.join("src", "input.txt");
+const inputPath = args.input ?? path.join("src/sample", "input.txt");
 
 try {
   Application.ensureInputFileExists(inputPath);
