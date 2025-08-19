@@ -18,6 +18,6 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "experimentalDecorators": true,
-    "noEmit": true,
+    "noEmit": false
   }
 }
